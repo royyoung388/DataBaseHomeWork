@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="DataBaseClass">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.8">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="ROY">
+      <ObjectId>48</ObjectId>
+      <IntrospectionTimestamp>2018-05-21.20:00:19</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-04-23.16:42:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-21.19:56:46</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="USER_01">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="USER_02">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="18" parent="2" name="MSG_SEQ">
+      <ObjectId>21659</ObjectId>
+      <CreatedTimestamp>2018-05-15.17:59:27</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.18:00:29</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>500</CacheSize>
+    </sequence>
+    <table id="19" parent="2" name="BANKACCOUNT">
+      <ObjectId>21553</ObjectId>
+      <CreatedTimestamp>2018-05-09.23:56:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-09.23:56:21</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="20" parent="2" name="BANKACCOUNT2">
+      <ObjectId>21633</ObjectId>
+      <CreatedTimestamp>2018-05-11.00:04:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-11.00:04:06</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="21" parent="2" name="LEAVE_APPLY">
+      <ObjectId>20600</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:43:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-21.19:56:46</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="22" parent="2" name="LEAVE_APPLY_STAT">
+      <ObjectId>21643</ObjectId>
+      <CreatedTimestamp>2018-05-14.15:13:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-14.15:13:10</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="23" parent="2" name="LESSON">
+      <ObjectId>20596</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:43:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:45:22</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="24" parent="2" name="MESSAGE">
+      <ObjectId>21650</ObjectId>
+      <CreatedTimestamp>2018-05-15.13:31:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.18:01:38</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="25" parent="2" name="STUDENT">
+      <ObjectId>20592</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:42:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.18:09:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="26" parent="2" name="STU_CHOOSE_LESSON">
+      <ObjectId>20598</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:43:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:15</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="27" parent="2" name="TEACHER">
+      <ObjectId>20594</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:43:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:01</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <routine id="28" parent="2" name="LEAVE_APPLY_STAT_PROC">
+      <ObjectId>21644</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <DependsOnIds>4852,20600,21643</DependsOnIds>
+      <CreatedTimestamp>2018-05-14.15:44:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-14.15:44:12</ModifiedTimestamp>
+    </routine>
+    <column id="29" parent="19" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="19" name="MONEY">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="31" parent="19" name="SYS_C007274">
+      <ObjectId>21554</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-05-09.23:56:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-09.23:56:21</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="19" name="SYS_C007274">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-05-09.23:56:21</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007274</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="20" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="20" name="MONEY">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="35" parent="20" name="SYS_C007276">
+      <ObjectId>21634</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-05-11.00:04:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-11.00:04:06</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="36" parent="20" name="SYS_C007276">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-05-11.00:04:06</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007276</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="21" name="APPLYNUM">
+      <Position>1</Position>
+      <DataType>NUMBER(16 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="21" name="APPLYTIME">
+      <Position>2</Position>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="21" name="REASON">
+      <Position>3</Position>
+      <DataType>VARCHAR2(128 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="21" name="STATE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="21" name="STUDENTNUM">
+      <Position>5</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="21" name="LESSONNUM">
+      <Position>6</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="21" name="TEACHERNUM">
+      <Position>7</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="44" parent="21" name="SYS_C007158">
+      <ObjectId>20601</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.16:43:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:21</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>APPLYNUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="45" parent="21" name="LESSONNUM">
+      <ObjectId>20604</ObjectId>
+      <CreatedTimestamp>2018-04-23.16:44:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:44:00</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>LESSONNUM</ColNames>
+    </index>
+    <key id="46" parent="21" name="SYS_C007158">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:43:21</ModifiedTimestamp>
+      <ColNames>APPLYNUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007158</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="47" parent="21" name="SYS_C007161">
+      <ModifiedTimestamp>2018-05-21.19:56:46</ModifiedTimestamp>
+      <ColNames>STUDENTNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>STUDENT</RefTableName>
+      <RefKeyName>SYS_C007138</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="48" parent="21" name="SYS_C007160">
+      <ModifiedTimestamp>2018-05-21.19:56:46</ModifiedTimestamp>
+      <ColNames>LESSONNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>LESSON</RefTableName>
+      <RefKeyName>SYS_C007146</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="49" parent="21" name="SYS_C007159">
+      <ModifiedTimestamp>2018-05-21.19:56:46</ModifiedTimestamp>
+      <ColNames>TEACHERNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>TEACHER</RefTableName>
+      <RefKeyName>SYS_C007142</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="50" parent="21" name="TRI_UPDATE">
+      <ObjectId>21655</ObjectId>
+      <DependsOnIds>21650</DependsOnIds>
+      <CreatedTimestamp>2018-05-15.17:27:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.17:55:34</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>after-row</Turn>
+      <ColNames>STATE</ColNames>
+    </trigger>
+    <column id="51" parent="22" name="STUDENTNUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="22" name="LEAVECOUNT">
+      <Position>2</Position>
+      <DataType>NUMBER(5 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="53" parent="23" name="LESSONNUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="23" name="LESSONNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(128 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="23" name="YEAR">
+      <Position>3</Position>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="56" parent="23" name="TERM">
+      <Position>4</Position>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <column id="57" parent="23" name="CREDIT">
+      <Position>5</Position>
+      <DataType>NUMBER(2 digit)|0s</DataType>
+    </column>
+    <column id="58" parent="23" name="TEACHERNUM">
+      <Position>6</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="23" name="BEFORELESSONNUM">
+      <Position>7</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+    </column>
+    <index id="60" parent="23" name="SYS_C007146">
+      <ObjectId>20597</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.16:43:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:09</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>LESSONNUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="23" name="SYS_C007146">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:43:09</ModifiedTimestamp>
+      <ColNames>LESSONNUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007146</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="62" parent="23" name="SYS_C007147">
+      <ModifiedTimestamp>2018-04-23.16:45:22</ModifiedTimestamp>
+      <ColNames>TEACHERNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>TEACHER</RefTableName>
+      <RefKeyName>SYS_C007142</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="63" parent="23" name="LESSON_CREDIT_0">
+      <ModifiedTimestamp>2018-04-23.16:43:55</ModifiedTimestamp>
+      <ColNames>CREDIT</ColNames>
+      <Predicate>CREDIT &gt;= 0</Predicate>
+    </check>
+    <column id="64" parent="24" name="MESSAGENUM">
+      <Position>1</Position>
+      <DataType>NUMBER(16 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="24" name="CONTENT">
+      <Position>2</Position>
+      <DataType>VARCHAR2(128 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="24" name="APPLYNUM">
+      <Position>3</Position>
+      <DataType>NUMBER(16 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="24" name="STUDENTNUM">
+      <Position>4</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="24" name="TIME">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="69" parent="24" name="SYS_C007295">
+      <ObjectId>21651</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-05-15.13:31:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.13:31:46</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>MESSAGENUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="24" name="SYS_C007295">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-05-15.13:31:46</ModifiedTimestamp>
+      <ColNames>MESSAGENUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007295</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="24" name="MESSAGE_APPLYNUM_FK">
+      <ModifiedTimestamp>2018-05-15.13:31:46</ModifiedTimestamp>
+      <ColNames>APPLYNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>LEAVE_APPLY</RefTableName>
+      <RefKeyName>SYS_C007158</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="72" parent="24" name="MESSAGE_STUDENT_STUDENTNUM_FK">
+      <ModifiedTimestamp>2018-05-15.13:31:46</ModifiedTimestamp>
+      <ColNames>STUDENTNUM</ColNames>
+      <RefSchemaName>ROY</RefSchemaName>
+      <RefTableName>STUDENT</RefTableName>
+      <RefKeyName>SYS_C007138</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <trigger id="73" parent="24" name="MSG_BIR">
+      <ObjectId>21653</ObjectId>
+      <DependsOnIds>117,21659</DependsOnIds>
+      <CreatedTimestamp>2018-05-15.17:27:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.18:01:38</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="74" parent="25" name="STUDENTNUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="25" name="STUDENTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(64 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="25" name="SEX">
+      <Position>3</Position>
+      <DataType>CHAR(2 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="25" name="CLASS">
+      <Position>4</Position>
+      <DataType>NUMBER(2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="25" name="PASSWORD">
+      <Position>5</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="79" parent="25" name="IDCARD">
+      <Position>6</Position>
+      <DataType>VARCHAR2(18 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="80" parent="25" name="SYS_C007138">
+      <ObjectId>20593</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.16:42:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:42:49</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>STUDENTNUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="81" parent="25" name="SYS_C007138">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:42:49</ModifiedTimestamp>
+      <ColNames>STUDENTNUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007138</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="82" parent="25" name="SYS_C007171">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:43:44</ModifiedTimestamp>
+      <ColNames>IDCARD</ColNames>
+      <Predicate>LENGTH(IDcard) = 18 AND REGEXP_LIKE(TRIM(IDcard), &apos;[0-9]{18}&apos;)</Predicate>
+    </check>
+    <trigger id="83" parent="25" name="TRI_INSERT">
+      <ObjectId>21649</ObjectId>
+      <DependsOnIds>117</DependsOnIds>
+      <CreatedTimestamp>2018-05-15.13:07:19</CreatedTimestamp>
+      <ModifiedTimestamp>2018-05-15.18:09:02</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+      <Condition>NEW.CLASS = 99</Condition>
+    </trigger>
+    <column id="84" parent="26" name="STUDENTNUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="26" name="LESSONNUM">
+      <Position>2</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="86" parent="26" name="SYS_C007150">
+      <ObjectId>20599</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.16:43:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:15</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>STUDENTNUM
+LESSONNUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="26" name="SYS_C007150">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:43:15</ModifiedTimestamp>
+      <ColNames>STUDENTNUM
+LESSONNUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007150</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="88" parent="27" name="TEACHERNUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(16 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="27" name="TEACHERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(64 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="27" name="SEX">
+      <Position>3</Position>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="27" name="TITLE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(32 byte)|0s</DataType>
+    </column>
+    <column id="92" parent="27" name="PASSWORD">
+      <Position>5</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <index id="93" parent="27" name="SYS_C007142">
+      <ObjectId>20595</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.16:43:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.16:43:01</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>TEACHERNUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="94" parent="27" name="SYS_C007142">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.16:43:01</ModifiedTimestamp>
+      <ColNames>TEACHERNUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007142</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
